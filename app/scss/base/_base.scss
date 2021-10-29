@@ -1,13 +1,20 @@
 * {
     padding: 0;
     margin: 0;
+    border: 0;
     box-sizing: border-box;
+    scroll-padding-top: 70px;
 }
 
 body {
     min-height: 100%;
     position: relative;
     overflow-x: hidden;
+    background-color: $color-white;
+
+    &.lock {
+        overflow: hidden;
+    }
 }
 
 a {
@@ -19,7 +26,15 @@ li {
 }
 
 img {
-    width: 100%;
-    height: auto;
+    vertical-align: top;
+    max-width: 100%;
 }
 
+.wrapper {
+    max-width: 1470px;
+    margin: 0 auto;
+}
+
+.main.blur {
+    filter: blur(4px);
+}
